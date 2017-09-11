@@ -1,0 +1,17 @@
+    <h2>Ranking Geral 2</h2>
+#    <table width="800">
+	<tr>
+		<th>Etapa</th>
+		<th>Nome</th>
+		<th>Posição</th>
+		<th>Pontuação</th>
+	</tr>
+	{% for p in list %}
+	<tr>
+            <td>{{p.id_etapa}} </td>
+            <td>{{p.id_player}}</td>
+            <td>{{p.posicao}}</td>
+            <td>{{p.pontuacao}}</td>
+    </tr>
+    {% endfor %}
+</table>
